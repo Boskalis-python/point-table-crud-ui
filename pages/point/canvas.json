@@ -80,7 +80,7 @@
                   "children": [
                     {
                       "boxShadow": "none",
-                      "widgetName": "Text16",
+                      "widgetName": "Title",
                       "dynamicPropertyPathList": [
                         {
                           "key": "fontSize"
@@ -307,7 +307,7 @@
                       "isVisible": "true",
                       "enableClientSideSearch": true,
                       "version": 3,
-                      "totalRecordsCount": "{{total.data}}",
+                      "totalRecordsCount": "{{total.data[0]['count']}}",
                       "isLoading": false,
                       "onSearchTextChanged": "{{SelectQuery.run()}}",
                       "childStylesheet": {
